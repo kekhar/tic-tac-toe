@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0" />
+    <title>Турнир</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <script src="../scripts/tournament.js" defer></script>
+  </head>
+  <body>
+    <h1>Турнир</h1>
+
+    <div id="setup">
+      <label for="win-count">Количество побед для выигрыша:</label>
+      <input id="win-count" type="number" min="1" value="3" />
+      <button id="start-game">Начать игру</button>
+    </div>
+
+    <div id="status" style="display: none">
+      <div>Счёт:</div>
+      <div>Игрок X: <span id="score-x">0</span></div>
+      <div>Игрок O: <span id="score-o">0</span></div>
+      <div id="current-player">Ход игрока: X</div>
+      <p id="result"></p>
+    </div>
+
+    <div id="game-board" class="threexthree" style="display: none"></div>
+
+    <a href="../index.html"><button>Домой</button></a>
+
+    <button id="restart-game" style="display: none">Начать заново</button>
+  </body>
+</html>
