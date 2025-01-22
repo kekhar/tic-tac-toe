@@ -1,3 +1,19 @@
+/* Анимация для выделения победных клеток */
+@keyframes highlightAnimation {
+  0% {
+    background-color: #ff7f50;
+    transform: scale(1);
+  }
+  50% {
+    background-color: #ff5722;
+    transform: scale(1.1);
+  }
+  100% {
+    background-color: #ff7f50;
+    transform: scale(1);
+  }
+}
+
 /* Общие стили для всей страницы */
 body {
   font-family: 'Arial', sans-serif;
@@ -147,10 +163,11 @@ h1 {
   background-color: #555;
 }
 
-/* Подсветка выигрышных ячеек */
+/* Подсветка выигрышных ячеек с анимацией */
 .highlight {
   background-color: #ff7f50;
   border-color: #ff7f50;
+  animation: highlightAnimation 1s ease-out infinite;
 }
 
 /* Кнопка "Домой" */
